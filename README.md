@@ -1,1 +1,1 @@
-# type
+# TypeScript　ドリル
