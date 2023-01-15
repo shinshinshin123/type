@@ -12,13 +12,13 @@
 
 //4
 //Utility型のPartialを再実装したMyPartial型を作ってください。
-type Partial = {
-    id: number;
-    name: string;
-    mainaddress: string;
-};
+// type Partial = {
+//     id: number;
+//     name: string;
+//     mainaddress: string;
+// };
 
-type PartialUser = Partial<User>;
+// type PartialUser = Partial<User>;
 //以下のようなものが得られる。
 // {
 //     id?: number | undefined;
@@ -26,16 +26,16 @@ type PartialUser = Partial<User>;
 //     mailaddress?: string | undefined;
 //  };
 
-type Admin = {
-    id: string;
-    type: string;
-    user: {
-        id: number;
-        name: string;
-        mailaddress: string;
-    };
-};
-type PartialAdmin = Partial<Admin>
+// type Admin = {
+//     id: string;
+//     type: string;
+//     user: {
+//         id: number;
+//         name: string;
+//         mailaddress: string;
+//     };
+// };
+// type PartialAdmin = Partial<Admin>
 
 //以下のようになる
 // {
@@ -48,9 +48,9 @@ type PartialAdmin = Partial<Admin>
 //     } | undefined;
 //   }
 
-type MyPartial<T> = {
-    [P in keyof T]?: T[P];
-};
+// type MyPartial<T> = {
+//     [P in keyof T]?: T[P];
+// };
 
 //5
 //Utility型のRequiredを再実装したMyRequired型を作ってください。
